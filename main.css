@@ -1,0 +1,45 @@
+
+.center_div {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically align items */
+    height: 200px; /* Example height */
+    padding: 10px;
+
+}
+
+.center_text{
+    font-family: 'Helvetica';
+    font-size: 30px;
+    font-weight: lighter;
+    width: 550px; /* Your desired container width */
+    word-wrap: break-word; /* Deprecated but widely supported */
+    overflow-wrap: break-word; /* Modern, recommended */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased; /* For Webkit browsers */
+    -moz-osx-font-smoothing: grayscale; /* For macOS */
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+.center_text_small{
+    margin-top: 5px;
+    color: gray;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    font-weight: 300;
+    width: 550px; /* Your desired container width */
+    word-wrap: break-word; /* Deprecated but widely supported */
+    overflow-wrap: break-word; /* Modern, recommended */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased; /* For Webkit browsers */
+    -moz-osx-font-smoothing: grayscale; /* For macOS */
+    line-height: 1.5; 
+}
+
+.gat_img {
+    margin-left: 55px;
+}
