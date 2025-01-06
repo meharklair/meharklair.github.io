@@ -1,9 +1,6 @@
 body {
   background-color: #5D3822;
 }
-
-
-
 .center_div {
     position: absolute;
     margin-top: 144px;
@@ -19,6 +16,7 @@ body {
 .center_text{
     color: white;
     font-size: 48px;
+    width: 400px;
     margin-bottom: 0px;
 }
 
@@ -29,7 +27,8 @@ body {
 }
 
 .gat_img {
-    margin-left: 128px;
+    border-radius: 25px;
+    margin-left: 32px;
 }
 
 .nav_bar {
@@ -73,6 +72,7 @@ body {
 }
 
 .card_img {
+  border-radius: 25px;
   margin-left: 128px;
 }
 
