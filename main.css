@@ -1,3 +1,8 @@
+body {
+  background-color: #5D3822;
+}
+
+
 
 .center_div {
     position: absolute;
@@ -12,11 +17,13 @@
 }
 
 .center_text{
+    color: white;
     font-size: 48px;
     margin-bottom: 0px;
 }
 
 .center_text_small{
+  color: white;
     margin-top: 0px;
     font-size: 16px;
 }
@@ -31,6 +38,7 @@
 }
 
 .nav_bar_item {
+    color: white;
     padding-top: 12px;
     padding-left: 32px;
     padding-right: 32px;
@@ -38,6 +46,7 @@
 }
 
 .nav_bar_item_first {
+    color: white;
     padding-top: 12px;
     padding-left: 64px;
     padding-right: 32px;
@@ -45,6 +54,7 @@
 }
 
 .card {
+    color: white;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -57,6 +67,7 @@
 }
 
 .card_paragraph {
+    color: white;
     width: 440px;
     word-wrap: break-word;
 }
