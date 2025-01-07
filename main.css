@@ -53,6 +53,7 @@ body {
 }
 
 .card {
+    border: black;
     color: white;
     position: absolute;
     display: flex;
@@ -69,12 +70,17 @@ body {
     color: white;
     width: 440px;
     word-wrap: break-word;
+    margin-top: 8px;
 }
-
+.card_title {
+  font-size:32px;
+  margin-bottom: 8px;
+}
 .card_img {
   border-radius: 25px;
   margin-left: 128px;
 }
+
 
 .card_section {
   width: 1440px;
