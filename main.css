@@ -61,7 +61,7 @@ body {
   width: fit-content; /* Shrink to fit the content */
   height: auto;
   padding: 48px 16px;
-  margin: auto auto 0 auto; /* Top margin and horizontal centering */
+  margin: auto auto auto auto; /* Top margin and horizontal centering */
 }
 
 .card_div {
