@@ -1,98 +1,45 @@
-body {
-  width: 100%;
-  background-color: #895129; /*#5D3822*/
-  margin: 0;
-}
-.center_div {
-  margin: 144px auto 0 auto; /* Top margin and horizontal centering */
-  display: flex;
-  max-width: 700px;
-  width: fit-content; /* Shrink to fit the content */
-  justify-content: flex-start;
-  align-items: center;
-  height: auto; 
-  padding: 10px 10px 10% 10px;
-}
-.center_text{
+.project_title{
     color: white;
     font-size: 48px;
     width: 400px;
-    margin-bottom: 0px;
+    margin: 0;
 }
+body {
+    width: 100%;
+    background-color: #895129; /*#5D3822*/
+    margin: 0;
+  }
 
-.center_text_small{
-  color: white;
-    margin-top: 0px;
-    font-size: 16px;
-}
-
-.gat_img {
-    border-radius: 25px;
-    margin-left: 32px;
-}
-
-.nav_bar {
-    display: flex;
-    align-items: center;
-}
-
-.nav_bar_item {
+.project_sub_header {
     color: white;
-    padding-top: 12px;
-    padding-left: 32px;
-    padding-right: 32px;
-    font-size: 16px;
-}
-
-.nav_bar_item_first {
-    color: white;
-    padding-top: 12px;
-    padding-left: 64px;
-    padding-right: 32px;
-    font-size: 16px;
-}
-
-.card {
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  max-width: 1280px; /* Optional: Set a maximum width for the card */
-  width: fit-content; /* Shrink to fit the content */
-  height: auto;
-  padding: 48px 16px;
-  margin: auto auto 64px auto; /* Top margin and horizontal centering */
-}
-
-.card_div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 128px;
-  height: 434px;
-  width: auto;
-  vertical-align: middle;
-}
-.card_paragraph {
-    color: white;
-    width: 440px;
-    word-wrap: break-word;
     margin-top: 8px;
-}
-.card_title {
-  font-size:32px;
-  margin-bottom: 8px;
+    font-size: 16px;
 }
 .card_img {
   border-radius: 25px;
 }
-.card_section {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 96px 0px 0px 0px;
+
+.case_study{
+    margin: 0 auto 0 auto;
+    width: 80%; /* Shrink to fit the content */
 }
 
+
+.paragraph{
+    line-height:25px;
+    color: white;
+}
+
+.title_div {
+    margin: 128px 0 0 128px; /* Top margin and horizontal centering */
+    max-width: 700px;
+    align-items: center;
+    max-width: 1280px; /* Optional: Set a maximum width for the card */
+    width: 80%;
+    height: auto;
+    padding: 48px 16px 32px 16px;
+    margin: 0 auto 0 auto; /* Top margin and horizontal centering */
+}
 .ibm-plex-sans-thin {
     font-family: "IBM Plex Sans", serif;
     font-weight: 100;
