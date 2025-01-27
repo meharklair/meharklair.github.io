@@ -32,14 +32,13 @@ body {
 /* project top section */
 
 .title_div {
-  margin: 128px 0 0 128px; /* Top margin and horizontal centering */
+  margin: 64px auto 0 auto; /* Top margin and horizontal centering */
   max-width: 700px;
   align-items: center;
   max-width: 1280px;
-  width: 70%;
+  width: 65%;
   height: auto;
   padding: 32px 16px 32px 16px;
-  margin: 0 auto 0 auto; /* Top margin and horizontal centering */
 }
 
 .project_title{
@@ -52,7 +51,7 @@ body {
 .project_description_small{
   color: white;
   font-size: 16px;
-  margin-top: 16px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -64,6 +63,14 @@ body {
     opacity: 80%;
 }
 
+.project_section_header {
+  color: white;
+  font-size: 24px;
+  width: 400px;
+  margin: 0;
+  opacity: 80%;
+}
+
 /* project top section end */
 
 .card_img {
@@ -72,12 +79,16 @@ body {
 
 .case_study{
     margin: 0 auto 0 auto;
-    width: 70%; /* Shrink to fit the content */
+    max-width: 1280px;
+    width: 65%;
 }
 
 .paragraph{
     line-height:25px;
+    font-size: 16px;
     color: white;
+    margin-top: 4px;
+    margin-bottom: 32px;
 }
 
 
