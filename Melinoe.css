@@ -1,9 +1,15 @@
 
 body {
   width: 100%;
-  background-color: #895129; /*#5D3822*/
+  background-color: #333333; /*#5D3822*/
   margin: 0;
 }
+
+.tech_tags {
+  display: inline-flex;
+
+}
+
 
 /* nav bar items*/
 

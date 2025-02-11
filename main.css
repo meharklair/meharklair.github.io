@@ -1,6 +1,9 @@
+html {
+  width: 100%;
+}
 body {
   width: 100%;
-  background-color: #895129; /*#5D3822*/
+  background-color: #333333; /*#5D3822*/
   margin: 0;
 }
 .top_section {
@@ -8,14 +11,13 @@ body {
   height: 100vh;
 }
 .center_div {
-  margin: 128px auto 0 auto; /* Top margin and horizontal centering */
+  margin: 10% auto 10% auto; /* Top margin and horizontal centering */
   display: flex;
-  max-width: 700px;
   width: fit-content; /* Shrink to fit the content */
+  height: fit-content;
   justify-content: flex-start;
   align-items: center;
-  height: auto; 
-  padding: 10px 10px 10% 10px;
+  padding: 10px 10px 10px 10px;
 }
 .center_text{
     color: white;
@@ -26,6 +28,7 @@ body {
 
 .center_text_small{
   color: white;
+  margin-left: 1px;
     margin-top: 0px;
     font-size: 16px;
 }
@@ -37,25 +40,32 @@ body {
 .nav_bar {
   display: flex;
   align-items: center;
-  padding: 16px 32px; /* Padding around the entire nav bar */
 }
 
 .nav_bar_item {
   color: white;
-  padding-top: 12px; /* Vertical padding */
-  padding-bottom: 18px; /* Adjusted for more breathing room */
-  padding-left: 40px; /* Horizontal spacing */
-  padding-right: 38px; /* Slightly reduced padding-right */
-  font-size: 18px; /* Font size for better visibility */
+  padding-top: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 16px;
+}
+
+.nav_bar_item:hover {
+  opacity: 80%;
+  transform: scale(1.05); /* Grows on hover */
+}
+
+.nav_bar_item_first:hover {
+  opacity: 80%;
+  transform: scale(1.05); /* Grows on hover */
 }
 
 .nav_bar_item_first {
   color: white;
   padding-top: 12px;
-  padding-bottom: 18px; /* Adjusted for more breathing room */
-  padding-left: 32px; /* Emphasis on the first item */
-  padding-right: 38px; /* Slightly reduced padding-right */
-  font-size: 18px;
+  padding-left: 64px;
+  padding-right: 32px;
+  font-size: 16px;
 }
 
 /* Media query for tablets (screen width <= 768px) */
@@ -106,14 +116,12 @@ body {
 
 .card:hover {
   transform: scale(1.02); /* Grows on hover */
-  box-shadow: 0 6px 10px #895129; /* Stronger shadow on hover */
 }
 
 /* Make the whole box clickable */
 .link-content {
   display: block; /* Make the entire <a> act as a block element */
   text-decoration: none; /* Remove underline from link */
-  color: inherit; /* Inherit text color from parent */
 }
 
 .card_div {
@@ -143,6 +151,11 @@ body {
   width: 100%;
   height: auto;
   padding: 96px 0px 0px 0px;
+}
+
+.bottom_text {
+  font-size:32px; 
+  color:white;
 }
 
 .ibm-plex-sans-thin {
