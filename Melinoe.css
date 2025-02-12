@@ -18,6 +18,7 @@ body {
 .nav_bar {
   display: flex;
   align-items: center;
+  margin-top: 16px;
 }
 
 .nav_bar_item {
