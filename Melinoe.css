@@ -9,7 +9,9 @@ body {
   display: inline-flex;
 
 }
-
+.tags{
+  margin-left: 10%;
+}
 
 /* nav bar items*/
 
@@ -26,12 +28,58 @@ body {
   font-size: 16px;
 }
 
+.nav_bar_item:hover {
+  opacity: 80%;
+  transform: scale(1.05); /* Grows on hover */
+}
+
+.nav_bar_item_first:hover {
+  opacity: 80%;
+  transform: scale(1.05); /* Grows on hover */
+}
+
 .nav_bar_item_first {
   color: white;
   padding-top: 12px;
   padding-left: 64px;
   padding-right: 32px;
   font-size: 16px;
+}
+
+/* Media query for tablets (screen width <= 768px) */
+@media (max-width: 768px) {
+  .nav_bar {
+    padding: 12px 24px; /* Reduce nav bar padding */
+  }
+  .nav_bar_item,
+  .nav_bar_item_first {
+    font-size: 16px; /* Reduce font size for medium screens */
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 32px; /* Adjust horizontal spacing */
+    padding-right: 30px; /* Adjust horizontal spacing */
+  }
+}
+
+/* Media query for mobile (screen width <= 480px) */
+@media (max-width: 480px) {
+  .nav_bar {
+    flex-direction: column; /* Stack nav items vertically */
+    padding: 8px 16px; /* Reduce nav bar padding for small screens */
+  }
+  .nav_bar_item,
+  .nav_bar_item_first {
+    font-size: 14px; /* Further reduce font size for small screens */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px; /* Reduce padding for smaller screens */
+    padding-right: 20px;
+  }
+}
+
+.link-content {
+  display: block; /* Make the entire <a> act as a block element */
+  text-decoration: none; /* Remove underline from link */
 }
 /* nav bar item end*/
 
@@ -95,6 +143,20 @@ body {
     color: white;
     margin-top: 4px;
     margin-bottom: 32px;
+}
+
+.github{
+  line-height:25px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  margin-top: 4px;
+  margin-bottom: 32px;
+}
+
+.github:hover {
+  opacity: 80%;
+  transform: scale(1.05); /* Grows on hover */
 }
 
 
