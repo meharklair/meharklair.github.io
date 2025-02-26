@@ -11,7 +11,7 @@ body {
   height: 85vh;
 }
 .center_div {
-  margin: 10% auto 10% auto; /* Top margin and horizontal centering */
+  margin: 12% auto 10% auto; /* Top margin and horizontal centering */
   display: flex;
   width: fit-content; /* Shrink to fit the content */
   height: fit-content;
