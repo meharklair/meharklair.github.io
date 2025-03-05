@@ -14,19 +14,41 @@ body {
 }
 
 /* nav bar items*/
-
 .nav_bar {
   display: flex;
   align-items: center;
   margin-top: 16px;
 }
 
+.nav_bar_info{
+  margin-right: 4px;
+}
+
+.nav_bar_text {
+    color: white;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nav_bar_icon{
+  margin-top: 16px;
+  display:flex;
+  margin-left:auto;
+  margin-right:64px;
+}
+
+.nav_bar_text_small{
+  color: white;
+  margin-top: 0px;
+  font-size: 16px;
+}
+
 .nav_bar_item {
   color: white;
-  padding-top: 12px;
   padding-left: 32px;
   padding-right: 32px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .nav_bar_item:hover {
@@ -41,10 +63,9 @@ body {
 
 .nav_bar_item_first {
   color: white;
-  padding-top: 12px;
   padding-left: 64px;
   padding-right: 32px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* Media query for tablets (screen width <= 768px) */

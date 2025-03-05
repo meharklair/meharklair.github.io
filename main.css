@@ -11,7 +11,7 @@ body {
   height: 85vh;
 }
 .center_div {
-  margin: 10% auto 10% auto; /* Top margin and horizontal centering */
+  margin: 10% auto 5% auto;
   display: flex;
   width: fit-content; /* Shrink to fit the content */
   height: fit-content;
@@ -22,24 +22,31 @@ body {
 .center_text{
     color: white;
     font-size: 48px;
+    word-wrap: break-word;
+    width: 800px; 
     margin-bottom: 0px;
 }
 
 .center_text_small{
   color: white;
   margin-left: 1px;
-    margin-top: 0px;
-    font-size: 16px;
+  margin-top: 16px;
+  line-height: 16px;
+  font-size: 16px;
 }
 
 .gat_img {
     border-radius: 25px;
-    margin-left: 32px;
+    margin-left: 0px;
 }
 .nav_bar {
   display: flex;
   align-items: center;
   margin-top: 16px;
+}
+
+.nav_bar_info{
+  margin-right: 4px;
 }
 
 .nav_bar_text {
@@ -49,23 +56,24 @@ body {
     margin-bottom: 0px;
 }
 
-.nav_bar_image{
+.nav_bar_icon{
+  margin-top: 16px;
   display:flex;
+  margin-left:auto;
+  margin-right:64px;
 }
 
 .nav_bar_text_small{
   color: white;
-  margin-left: 1px;
-    margin-top: 0px;
-    font-size: 16px;
+  margin-top: 0px;
+  font-size: 16px;
 }
 
 .nav_bar_item {
   color: white;
-  padding-top: 12px;
   padding-left: 32px;
   padding-right: 32px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .nav_bar_item:hover {
@@ -80,10 +88,9 @@ body {
 
 .nav_bar_item_first {
   color: white;
-  padding-top: 12px;
   padding-left: 64px;
   padding-right: 32px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* Media query for tablets (screen width <= 768px) */
@@ -125,6 +132,7 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
   justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
   max-width: 1280px; /* Optional: Set a maximum width for the card */
   width: fit-content; /* Shrink to fit the content */
   height: auto;
@@ -138,7 +146,6 @@ body {
 
 /* Make the whole box clickable */
 .link-content {
-  display: block; /* Make the entire <a> act as a block element */
   text-decoration: none; /* Remove underline from link */
 }
 
@@ -149,13 +156,15 @@ body {
   padding-right: 128px;
   height: 434px;
   width: auto;
+  margin-bottom:64px;
   vertical-align: middle;
 }
 .card_paragraph {
     color: white;
-    width: 440px;
+    width: 325px;
+    font-size: 16px;
     word-wrap: break-word;
-    margin-top: 8px;
+    margin-top: 0px;
 }
 .card_title {
   font-size:32px;
@@ -184,6 +193,32 @@ body {
   margin-left: 5%; 
   color:white;
 }
+
+
+.arrow-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  display: inline-block;
+  font-size: 5rem;
+  color: White;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+
+
+
+
+
+
+
 
 .ibm-plex-sans-thin {
     font-family: "IBM Plex Sans", serif;
