@@ -169,8 +169,8 @@ body {
 
 .github{
   line-height:25px;
-  font-size: 24px;
-  color: white;
+  font-size: 16px;
+  color: red;
   text-decoration: none;
 }
 
@@ -188,12 +188,43 @@ body {
   align-items: center;
 }
 
+
+.bottom_nav_bar_item {
+  color: white;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.bottom_nav_bar {
+  display: flex;
+  align-items: right;
+  margin-left: auto;
+  margin-right: 64px;
+}
+
+.bottom_nav_left {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+}
+
+.bottom_nav_right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.bottom_nav_bar_item:hover {
+  opacity: 80%;
+  transform: scale(1.05); /* Grows on hover */
+}
+
 .bottom_text {
-  font-size:32px;
+  font-size:24px;
   margin-left: 5%; 
   color:white;
 }
-
 
 .ibm-plex-sans-thin {
     font-family: "IBM Plex Sans", serif;
