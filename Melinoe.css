@@ -5,13 +5,6 @@ body {
   margin: 0;
 }
 
-.tech_tags {
-  display: inline-flex;
-
-}
-.tags{
-  margin-left: 10%;
-}
 
 /* nav bar items*/
 .nav_bar {
@@ -105,6 +98,7 @@ body {
 }
 /* nav bar item end*/
 
+
 /* project top section */
 
 .title_div {
@@ -147,16 +141,26 @@ body {
   opacity: 80%;
 }
 
-/* project top section end */
-
 .card_img {
   border-radius: 25px;
 }
 
+/* project top section end */
+
+/* case study */
+
 .case_study{
-    margin: 0 auto 0 auto;
-    max-width: 1280px;
-    width: 65%;
+  margin: 0 auto 0 auto;
+  max-width: 1280px;
+  width: 65%;
+}
+
+.tech_tags {
+  display: inline-flex;
+
+}
+.tags{
+  margin-left: 10%;
 }
 
 .paragraph{
@@ -179,6 +183,9 @@ body {
   transform: scale(1.05); /* Grows on hover */
 }
 
+/* case study End */
+
+/* Bottom bar */
 
 .bottom_bar {
   background-color: #4a4a4a;
@@ -225,6 +232,11 @@ body {
   margin-left: 5%; 
   color:white;
 }
+
+/* Bottom bar End*/
+
+
+/* Fonts */
 
 .ibm-plex-sans-thin {
     font-family: "IBM Plex Sans", serif;
