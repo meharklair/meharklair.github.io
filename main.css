@@ -115,25 +115,107 @@ body {
   align-items: center;
   padding: 10px 10px 10px 10px;
 }
+
 .center_text{
-    color: white;
-    font-size: 48px;
-    word-wrap: break-word;
-    width: 800px; 
-    margin-bottom: 0px;
+  color: white;
+  font-size: 48px;
+  word-wrap: break-word;
+  width: 800px; 
+  margin-bottom: 0px;
 }
 
 .center_text_small{
-  color: white;
-  margin-left: 1px;
-  margin-top: 16px;
-  line-height: 16px;
-  font-size: 16px;
+color: white;
+margin-left: 1px;
+margin-top: 16px;
+line-height: 16px;
+font-size: 20px;
 }
 
 .gat_img {
-    border-radius: 25px;
-    margin-left: 0px;
+  border-radius: 25px;
+  margin-left: 0px;
+  width:370px;
+  height:300px;
+}
+
+
+
+@media (max-width: 1280px){
+
+    .center_div {
+      margin: 10% auto 2.5% auto;
+      display: flex;
+      width: fit-content; /* Shrink to fit the content */
+      height: fit-content;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px 10px 10px 10px;
+  }
+
+  
+    .center_text{
+      color: white;
+      font-size: 48px;
+      word-wrap: break-word;
+      width: 600px; 
+      margin-bottom: 0px;
+    }
+
+    .center_text_small{
+    color: white;
+    margin-left: 1px;
+    margin-top: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    }
+
+    .gat_img {
+      border-radius: 25px;
+      margin-left: 0px;
+      width:330px;
+      height:270px;
+    }
+
+  @media (max-width: 1025px){
+    
+    .center_div {
+      margin: 10% auto 2.5% auto;
+      display: flex;
+      width: fit-content; /* Shrink to fit the content */
+      height: fit-content;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px 10px 10px 10px;
+  }
+
+  
+    .center_text{
+      color: white;
+      font-size: 32px;
+      word-wrap: break-word;
+      width: 400px; 
+      margin-bottom: 0px;
+    }
+
+    .center_text_small{
+    color: white;
+    margin-left: 1px;
+    margin-top: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    }
+
+    .gat_img {
+      border-radius: 25px;
+      margin-left: 0px;
+      width:260px;
+      height:200px;
+    }
+
+
+  }
+
 }
 
 /* Center Section End*/
@@ -219,7 +301,134 @@ body {
 }
 .card_img {
   border-radius: 25px;
+  width:654px;
+  height:436px;
 }
+
+@media (max-width: 1280px){
+
+  
+  .card_section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 64px 0px 0px 0px;
+  }
+  
+  .card {
+    color: white;
+    display: flex;
+    overflow: hidden; /* Clip animation effect if needed */
+    border-radius: 12px; /* Smooth corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    max-width: 1024px; /* Optional: Set a maximum width for the card */
+    width: fit-content; /* Shrink to fit the content */
+    height: auto;
+    padding: 48px 16px;
+    margin: auto auto 64px auto; /* Top margin and horizontal centering */
+  }
+
+  .card_paragraph {
+    color: white;
+    width: 325px;
+    font-size: 16px;
+    word-wrap: break-word;
+    margin-top: 0px;
+  }
+
+  .card_title {
+    font-size:32px;
+    margin-bottom: 8px;
+  }
+
+  .card_img {
+    border-radius: 25px;
+    width: 550px;
+    height:400px;
+  }
+  
+  .card_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 64px;
+    height: 434px;
+    width: auto;
+    margin-bottom:64px;
+    vertical-align: middle;
+  }
+
+}
+
+@media (max-width: 1025px){ 
+  .card_section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 96px 0px 0px 0px;
+  }
+  
+  .card {
+    color: white;
+    display: flex;
+    overflow: hidden; /* Clip animation effect if needed */
+    border-radius: 12px; /* Smooth corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1025px; /* Optional: Set a maximum width for the card */
+    width: fit-content; /* Shrink to fit the content */
+    height: auto;
+    padding: 48px 16px;
+    margin: auto auto 32px auto; /* Top margin and horizontal centering */
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Grows on hover */
+  }
+  
+  /* Make the whole box clickable */
+  .link-content {
+    text-decoration: none; /* Remove underline from link */
+  }
+  
+  .card_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0px;
+    height: auto;
+    width: 500px;
+    margin-bottom:64px;
+    vertical-align: middle;
+  }
+  .card_paragraph {
+      color: white;
+      width: auto;
+      font-size: 12px;
+      word-wrap: break-word;
+      margin-top: 0px;
+  }
+  .card_title {
+    font-size:24px;
+    margin-bottom: 8px;
+  }
+  .card_img {
+    order: -1;
+    border-radius: 25px;
+    width: 500px;
+    height:350px;
+  }
+  
+
+
+}
+
+
 
 /* Card Section End*/
 
