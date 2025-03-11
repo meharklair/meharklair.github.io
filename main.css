@@ -70,35 +70,96 @@ body {
   font-size: 18px;
 }
 
+.topnav {
+  display: none;
+}
+
 /* Media query for tablets (screen width <= 768px) */
 @media (max-width: 768px) {
-  .nav_bar {
-    padding: 12px 24px; /* Reduce nav bar padding */
+  .nav_bar{
+    display: none;    
   }
-  .nav_bar_item,
-  .nav_bar_item_first {
-    font-size: 16px; /* Reduce font size for medium screens */
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 32px; /* Adjust horizontal spacing */
-    padding-right: 30px; /* Adjust horizontal spacing */
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
+  li{
+    list-style: none;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+    }
+
+  .topnav{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+
+  .nav_item{
+    margin: 16px 0;
+  }
+
+  .nav_link{
+    transition: 0.7s ease;
+    
+  }
+
+  .nav_link:hover{
+    color: dodgerblue;
+  }
+ 
+  .hamburger {
+      display: block;
+
+    }
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+
+    }.hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+      }
+    
+      .nav_menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #4a4a4a;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+      }
+
+      .nav_menu.active{
+        left: 0;
+      }
+  
 }
 
 /* Media query for mobile (screen width <= 480px) */
 @media (max-width: 480px) {
-  .nav_bar {
-    flex-direction: column; /* Stack nav items vertically */
-    padding: 8px 16px; /* Reduce nav bar padding for small screens */
-  }
-  .nav_bar_item,
-  .nav_bar_item_first {
-    font-size: 14px; /* Further reduce font size for small screens */
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 20px; /* Reduce padding for smaller screens */
-    padding-right: 20px;
-  }
+ 
 }
 
 /*nav bar Section End*/
@@ -125,11 +186,11 @@ body {
 }
 
 .center_text_small{
-color: white;
-margin-left: 1px;
-margin-top: 16px;
-line-height: 16px;
-font-size: 20px;
+  color: white;
+  margin-left: 1px;
+  margin-top: 16px;
+  line-height: 16px;
+  font-size: 20px;
 }
 
 .gat_img {
