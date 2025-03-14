@@ -443,16 +443,17 @@ body {
     color: white;
     font-size: 20px;
     word-wrap: break-word;
-    width: 270px; 
+    width: 340px; 
     margin-bottom: 0px;
   }
 
   .center_text_small{
   color: white;
   margin-left: 1px;
-  margin-top: 4px;
+  margin-top: 8px;
+  width: 340px;
   line-height: 16px;
-  font-size: 8px;
+  font-size: 13px;
   }
 
   .gat_img {
@@ -613,7 +614,7 @@ body {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 32px 0px 0px 0px;
+    padding: 16px 0px 0px 0px;
   }
   
   .card {
