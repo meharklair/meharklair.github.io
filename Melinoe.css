@@ -1,12 +1,14 @@
-
+html {
+  width: 100%;
+}
 body {
   width: 100%;
   background-color: #333333; /*#5D3822*/
   margin: 0;
 }
 
+/*nav bar Section*/
 
-/* nav bar items*/
 .nav_bar {
   display: flex;
   align-items: center;
@@ -61,42 +63,170 @@ body {
   font-size: 18px;
 }
 
-/* Media query for tablets (screen width <= 768px) */
-@media (max-width: 768px) {
-  .nav_bar {
-    padding: 12px 24px; /* Reduce nav bar padding */
-  }
-  .nav_bar_item,
-  .nav_bar_item_first {
-    font-size: 16px; /* Reduce font size for medium screens */
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 32px; /* Adjust horizontal spacing */
-    padding-right: 30px; /* Adjust horizontal spacing */
-  }
+.topnav {
+  display: none;
 }
 
-/* Media query for mobile (screen width <= 480px) */
-@media (max-width: 480px) {
-  .nav_bar {
-    flex-direction: column; /* Stack nav items vertically */
-    padding: 8px 16px; /* Reduce nav bar padding for small screens */
-  }
-  .nav_bar_item,
-  .nav_bar_item_first {
-    font-size: 14px; /* Further reduce font size for small screens */
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 20px; /* Reduce padding for smaller screens */
-    padding-right: 20px;
-  }
+.me_image{
+  width: 70px;
+  height: 60px;
 }
-
 .link-content {
-  display: block; /* Make the entire <a> act as a block element */
   text-decoration: none; /* Remove underline from link */
 }
-/* nav bar item end*/
+
+@media (max-width: 1023px){
+  
+  .nav_bar_item_first {
+    color: white;
+    padding-left: 32px;
+    padding-right: 16px;
+    font-size: 16px;
+  }
+
+  .nav_bar_item {
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 16px;
+  }
+  
+
+    .nav_bar_text {
+      color: white;
+      font-size: 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+
+  .nav_bar_icon{
+    margin-top: 16px;
+    display:flex;
+    margin-left:auto;
+    margin-right:32px;
+  }
+
+  .nav_bar_text_small{
+    color: white;
+    margin-top: 0px;
+    margin-left: 2px;
+    font-size: 12px;
+  }
+
+  .me_image{
+    width:55px;
+    height:45px;
+  }
+
+
+}
+
+/* Media query for tablets (screen width <= 768px) */
+@media (max-width: 768px) {
+  .nav_bar{
+    display: none;    
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  li{
+    list-style: none;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+    }
+
+  .topnav{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+
+  .nav_item{
+    margin: 16px 0;
+  }
+
+  .nav_link{
+    transition: 0.7s ease;
+    
+  }
+
+  .nav_link:hover{
+    opacity: 80%;
+    transform: scale(1.05); /* Grows on hover */
+  }
+ 
+  .hamburger {
+      display: block;
+
+    }
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+
+    }.hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+      }
+    
+      .nav_menu {
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #333333;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        overflow-y:initial;
+      }
+
+      .nav_menu.active{
+        left: 0;
+      }
+
+      .nav_bar_text {
+        color: white;
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .nav_bar_icon{
+      margin-top: 16px;
+      display: flex;
+      margin-left: 0px;
+      margin-right: auto;
+      }
+
+      .nav_bar_text_small{
+      color: white;
+      margin-top: 0px;
+      font-size: 12px;
+      }
+  
+}
+
+/* nav bar end */
 
 
 /* project top section */
