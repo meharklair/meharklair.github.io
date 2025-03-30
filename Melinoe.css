@@ -368,7 +368,7 @@ body {
 @media (max-width: 425px) {
 
   .title_div {
-    margin: 32px auto 0 auto; /* Top margin and horizontal centering */
+    margin: 16px auto 0 auto; /* Top margin and horizontal centering */
     align-items: center;
     max-width: 1280px;
     width: 90%;
