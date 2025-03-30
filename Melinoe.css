@@ -430,6 +430,7 @@ body {
 .tech_tags {
   width: 100%;
   display: inline-flex;
+  margin-bottom: 16px;
 
 }
 
@@ -439,9 +440,9 @@ body {
 }
 
 .tags{
-  width: 700px;
+  width: 45%;
   float: right;
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 .tech_tags_small{
@@ -454,7 +455,7 @@ body {
     text-wrap: wrap;
     color: white;
     margin-top: 4px;
-    margin-bottom: 32px;
+    margin-bottom: 0px;
 }
 
 .paragraph{
