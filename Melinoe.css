@@ -434,14 +434,14 @@ body {
 }
 
 .tech{
-  width: 400px;
+  width: 500px;
   float: left;
 }
 
 .tags{
-  width: 400px;
+  width: 600px;
   float: right;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 .smaller_paragraph{
