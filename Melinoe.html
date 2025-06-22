@@ -1,5 +1,18 @@
 <!DOCTYPE html>
+<html>
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YGT3JQDS08"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-YGT3JQDS08');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Melinoe.css">
     <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,19 +23,50 @@
     <div class="nav_bar">
         <a class=" link-content nav_bar_item_first ibm-plex-sans-regular" href="index.html">Projects</a>
         <a class=" link-content nav_bar_item ibm-plex-sans-regular" href="about.html">About</a>
-        <a class=" link-content nav_bar_item ibm-plex-sans-regular" href="Mehar_Klair.pdf">Resume</a>
+        <a class=" link-content nav_bar_item ibm-plex-sans-regular" href="Mehar_Klair_Resume.pdf">Resume</a>
         <a class=" link-content nav_bar_item ibm-plex-sans-regular" href="https://www.linkedin.com/in/mehar-klair/">Linkedin</a>
         <a class=" link-content nav_bar_item ibm-plex-sans-regular" href="https://kellars.gitbook.io/my-blog">Blog</a>
-
+        <a class="link-content nav_bar_icon"  href="index.html">
+            <div class="nav_bar_info">
+            <h1 class="nav_bar_text ibm-plex-sans-medium">Mehar Klair</h1>
+            <h2 class="nav_bar_text_small ibm-plex-sans-extralight">Software Engineer</h2>
+            </div>
+            <img src="Images/Me.png" alt="me2" class="me_image">
+        </a>      
+    </div>
+        <!-- Top Navigation Menu -->
+    <nav class="topnav">
         <div class="nav_bar_icon">
             <div class="nav_bar_info">
             <h1 class="nav_bar_text ibm-plex-sans-medium">Mehar Klair</h1>
             <h2 class="nav_bar_text_small ibm-plex-sans-extralight">Software Engineer</h2>
             </div>
-            <img src="Images/me.png" alt="me2" style="width:70px;height:60px;">
+            <img src="Images/Me.png" alt="me2" style="width:60px;height:50px;">
         </div>    
-
-    </div>
+        <ul class="nav_menu">
+            <li class="nav_item">               
+                <a class="nav_link ibm-plex-sans-medium" href="index.html">Projects</a>
+            </li>
+            <li class="nav_item ibm-plex-sans-medium">               
+                <a class="nav_link" href="about.html">About</a>
+            </li>
+            <li class="nav_item ibm-plex-sans-medium">               
+                <a class="nav_link" href="Mehar_Klair_Resume.pdf">Resume</a>
+            </li>
+            <li class="nav_item ibm-plex-sans-medium">               
+                <a class="nav_link" href="https://www.linkedin.com/in/mehar-klair/">Linkedin</a>
+            </li>
+            <li class="nav_item ibm-plex-sans-medium">               
+                <a class="nav_link" href="https://kellars.gitbook.io/my-blog">Blog</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <script src="script.js"></script>
+    </nav>
     <div class="title_div">
         <p class="project_sub_header ibm-plex-sans-bold">Defensive Software Development</p>
         <h1 class="project_title ibm-plex-sans-medium">Melinoe</h1>
@@ -37,10 +81,24 @@
             &ensp;Github link! <br>
             </a>
         </p>
-        <div class="tech_tags">
-            <div>
+        <div class="tech_tags_small">
+            <div class="tech_small">
             <h1 class="project_section_header ibm-plex-sans-bold">Tech stack</h1>
-            <p class="ibm-plex-sans-light paragraph">
+            <p class="ibm-plex-sans-light smaller_paragraph">
+                Programming Language: Python <br>
+                Security & Malware Analysis: YARA, MalwareBazaar <br>
+                File Analysis & Hashing: Hashlib<br>
+                Command Line Interface: Click</p>
+            </div>
+            <div class="tags_small">
+            <h1 class="project_section_header ibm-plex-sans-bold">Tags</h1>
+            <p class="ibm-plex-sans-light smaller_paragraph"> Cybersecurity; Malware Analysis; Threat Detection; Reverse Engineering; YARA Rules; Hash-based Detection; File Hashing; Signature Detection;  Python Security Tools; Security Automation; Secure Coding; Intrusion Detection; Python Development; Open Source Security; Automation; Software Optimization; Command-line Utilities;</p>
+            </div>
+        </div>
+        <div class="tech_tags">
+            <div class="tech">
+            <h1 class="project_section_header ibm-plex-sans-bold">Tech stack</h1>
+            <p class="ibm-plex-sans-light smaller_paragraph">
                 Programming Language: Python <br>
                 Security & Malware Analysis: YARA, MalwareBazaar <br>
                 File Analysis & Hashing: Hashlib<br>
@@ -48,7 +106,7 @@
             </div>
             <div class="tags">
             <h1 class="project_section_header ibm-plex-sans-bold">Tags</h1>
-            <p class="ibm-plex-sans-light paragraph"> Cybersecurity; Malware Analysis; Threat Detection; Reverse Engineering; YARA Rules; Hash-based Detection; File Hashing; Signature Detection;  Python Security Tools; Security Automation; Secure Coding; Intrusion Detection; Python Development; Open Source Security; Automation; Software Optimization; Command-line Utilities;</p>
+            <p class="ibm-plex-sans-light smaller_paragraph"> Cybersecurity; Malware Analysis; Threat Detection; Reverse Engineering; YARA Rules; Hash-based Detection; File Hashing; Signature Detection;  Python Security Tools; Security Automation; Secure Coding; Intrusion Detection; Python Development; Open Source Security; Automation; Software Optimization; Command-line Utilities;</p>
             </div>
         </div>
         <h1 class="project_section_header ibm-plex-sans-bold">
@@ -63,7 +121,7 @@
         <p class="bottom_text ibm-plex-sans-medium">Thank you for checking out my porfolio!!</p>
         <div class="bottom_nav_bar">
             <div class="bottom_nav_left">
-                <a class=" link-content bottom_nav_bar_item ibm-plex-sans-regular" href="index.html">Home</a>
+                <a class=" link-content bottom_nav_bar_item ibm-plex-sans-regular" href="index.html">Projects</a>
                 <a class=" link-content bottom_nav_bar_item ibm-plex-sans-regular" href="about.html">About</a>
                 <a class=" link-content bottom_nav_bar_item ibm-plex-sans-regular" href="Mehar_Klair.pdf">Resume</a>
             </div>
@@ -74,3 +132,4 @@
         </div>
     </div>
 </body>
+</html>
